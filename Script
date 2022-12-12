@@ -7,6 +7,7 @@ local TextButton_2 = Instance.new("TextButton")
 local TextButton_3 = Instance.new("TextButton")
 local TextButton_4 = Instance.new("TextButton")
 local TextLabel_2 = Instance.new("TextLabel")
+local TextButton_9 = Instance.new("TextButton")
 
 --Properties:
 
@@ -24,7 +25,7 @@ TextLabel.BorderColor3 = Color3.fromRGB(0, 255, 255)
 TextLabel.Position = UDim2.new(0.0937178135, 0, 0.155597717, 0)
 TextLabel.Size = UDim2.new(0, 195, 0, 37)
 TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "Press c to dash"
+TextLabel.Text = "Nick's UD Dungeon UI Rewrite"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
@@ -53,15 +54,11 @@ TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton_2.Position = UDim2.new(0.00200000009, 0, 0.0500000007, 0)
 TextButton_2.Size = UDim2.new(0, 184, 0, 64)
 TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "big cut(e)"
+TextButton_2.Text = "Devastating Slash (e)"
 TextButton_2.TextColor3 = Color3.fromRGB(0, 243, 255)
 TextButton_2.TextSize = 14.000
 TextButton_2.MouseButton1Down:connect(function()
   local A_1 = "Devestating Slash"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
- local A_1 = "6 Souls"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
 
@@ -71,7 +68,7 @@ TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.Position = UDim2.new(0.00200000009, 0, 0.100000001, 0)
 TextButton_3.Size = UDim2.new(0, 184, 0, 64)
 TextButton_3.Font = Enum.Font.SourceSans
-TextButton_3.Text = "Big stabs 2(g)"
+TextButton_3.Text = "Stabby Stab Stab (g)"
 TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.TextSize = 13.000
 TextButton_3.MouseButton1Down:connect(function()
@@ -98,19 +95,19 @@ if KeyToToggleScript == "f" then
 local A_1 = "Deal Heal"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
-wait(4)
+wait(1)
 local A_1 = "Pulse of Determination"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
-wait(4)
+wait(1)
 local A_1 = "Chaos Heal"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
-wait(4)
+wait(1)
 local A_1 = "Overclock Heal"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
-wait(4)
+wait(1)
 local A_1 = "Determination"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
@@ -124,6 +121,15 @@ if KeyToToggleScript == "g" then
 local A_1 = "Endless Stabs"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
+wait(2)
+local A_1 = "Knife Throw"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+local A_1 = "Death Smite"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
 end
 end)
 
@@ -131,16 +137,73 @@ local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 Mouse.KeyDown:connect(function(Amogus)
 local KeyToToggleScript = Amogus:lower()
 if KeyToToggleScript == "c" then
-local A_1 = "Aidan Strike"
+local A_1 = "Vorpal Strike"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
+end
+end)
+
+TextButton_4.Parent = ScrollingFrame
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 0, 255)
+TextButton_4.Position = UDim2.new(0.00200000009, 0, 0.159999992, 0)
+TextButton_4.Size = UDim2.new(0, 184, 0, 64)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Smite (z)"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 13.000
+TextButton_4.MouseButton1Down:connect(function()
+local condition = true
+while condition do
+local A_1 = "Death Smite"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+end
+end)
+
+TextButton_9.Parent = ScrollingFrame
+TextButton_9.BackgroundColor3 = Color3.fromRGB(178,34,34)
+TextButton_9.Position = UDim2.new(0.00200000009, 0, 0.24000000, 0)
+TextButton_9.Size = UDim2.new(0, 184, 0, 64)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "CMDX"
+TextButton_9.TextColor3 = Color3.fromRGB(0,0,0)
+TextButton_9.TextSize = 14.000
+TextButton_9.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+end)
+
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+Mouse.KeyDown:connect(function(Amogus)
+local KeyToToggleScript = Amogus:lower()
+if KeyToToggleScript == "k" then
+local A_1 = "Riptide"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+local A_1 = "PIPIS"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+local A_1 = "Synergy Pulse"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+local A_1 = "Electric Sword"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+wait(2)
+local A_1 = "Supreme Dog Bomb"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+
 end
 end)
 
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 Mouse.KeyDown:connect(function(Amogus)
 local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "6" then
+if KeyToToggleScript == "b" then
 local A_1 = "Six Souls"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
@@ -150,44 +213,23 @@ end)
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 Mouse.KeyDown:connect(function(Amogus)
 local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "8" then
+if KeyToToggleScript == "n" then
+local A_1 = "Flaming Propel"
+local Event = game:GetService("ReplicatedStorage").UseSpell
+Event:FireServer(A_1)
+end
+end)
+
+
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+Mouse.KeyDown:connect(function(Amogus)
+local KeyToToggleScript = Amogus:lower()
+if KeyToToggleScript == "b" then
 local A_1 = "Supreme Damage Presents"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
-end
-end)
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "p" then
-local A_1 = "Perfect Parry"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-
-local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
-Mouse.KeyDown:connect(function(Amogus)
-local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "r" then
-local A_1 = "Red Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
 wait(2)
-local A_1 = "Orange Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Gaster Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Blue Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:Fireserver(A_1)
-wait(2)
-local A_1 = "Purple Blasters"
+local A_1 = "Damage Presents"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
 end
@@ -196,65 +238,9 @@ end)
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 Mouse.KeyDown:connect(function(Amogus)
 local KeyToToggleScript = Amogus:lower()
-if KeyToToggleScript == "=" then
-local A_1 = "Riptide"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "PIPIS"
+if KeyToToggleScript == "z" then
+local A_1 = "Death Smite"
 local Event = game:GetService("ReplicatedStorage").UseSpell
 Event:FireServer(A_1)
 end
 end)
-
-
-TextButton_4.Parent = ScrollingFrame
-TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-TextButton_4.Position = UDim2.new(0.00200000009, 0, 0.159999996, 0)
-TextButton_4.Size = UDim2.new(0, 184, 0, 64)
-TextButton_4.Font = Enum.Font.SourceSans
-TextButton_4.Text = "Blaster Spam"
-TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_4.TextSize = 14.000
-TextButton_4.MouseButton1Down:connect(function()
-local A_1 = "Red Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Orange Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Gaster Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-wait(2)
-local A_1 = "Blue Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:Fireserver(A_1)
-wait(2)
-local A_1 = "Purple Blasters"
-local Event = game:GetService("ReplicatedStorage").UseSpell
-Event:FireServer(A_1)
-end
-end)
-
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
-local ScrollingFrame = Instance.new("ScrollingFrame")
-local TextButton = Instance.new("TextButton")
-local TextButton_2 = Instance.new("TextButton")
-local TextButton_3 = Instance.new("TextButton")
-local TextButton_4 = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
-local TextButton_9 = Instance.new("TextButton")
---Properties:
- 
-ScreenGui.Parent = game.CoreGui
- 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Frame.Position = UDim2.new(0.959140381, 0, 0.3, 0)
-Frame.Size = UDim2.new(0, 195, 0, 356)
-Frame.Draggable = true
